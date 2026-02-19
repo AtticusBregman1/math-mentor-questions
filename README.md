@@ -43,6 +43,23 @@ git remote add origin https://github.com/YOUR_USERNAME/math-mentor-questions.git
 git push -u origin main
 ```
 
+## Importing into Firestore
+
+From the **MathMentor** project root (not this folder):
+
+```bash
+npm run import-questions
+```
+
+Requires `.env`:
+
+- `GITHUB_TOKEN` — Personal access token with `repo` scope (required for private repos)
+- `GITHUB_QUESTIONS_REPO` — `owner/repo` (e.g. `your-username/math-mentor-questions`)
+- `GITHUB_QUESTIONS_PATH` — Optional, default `questions`
+- `IMPORT_CLEAR=1` — Optional, clears existing questions before import
+
+The script fetches `.md` files from the repo, parses frontmatter and content, and upserts into Firestore by `sourceId` (filename without `.md`).
+
 ## Relationship to MathMentor
 
 The MathMentor app reads questions from Firestore. This repo is the authoring layer—questions are edited here, version-controlled, and imported into Firestore for the app to serve. The main MathMentor codebase does not track this folder.
