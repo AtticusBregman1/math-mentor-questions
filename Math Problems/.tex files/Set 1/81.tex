@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\begin{document}
+\thispagestyle{empty}
+
+\noindent Find the measure of \angle\emph{x}.\footnote{(1) Hosei University High School, Tokyo, (2) Ikubunkan High School, Tokyo, (3) Rakunan High School, Kyoto}\\
+
+\noindent (1): AB = AC, \emph{L}//\emph{M}
+\begin{center}
+    \includegraphics[scale = 0.52]{81/81(1).png}
+\end{center}
+
+\noindent (2): \emph{CD}//\emph{L},
+\begin{math}
+    \angle DEF = 90^\circ
+\end{math}
+\begin{center}
+    \includegraphics[scale = 0.52]{81/81(2).png}
+\end{center}
+
+\newpage
+\thispagestyle{empty}
+\noindent (3): \emph{L}//\emph{M}, both hexagons are regular hexagons.\\
+\emph{Hint: Draw an auxiliary line and extend some of the sides of the hexagons.}
+\begin{center}
+    \includegraphics[scale = 0.7]{81/81(3).png}
+\end{center}
+
+\newpage
+\thispagestyle{empty}
+
+\begin{center}
+\section*{Solution}
+\end{center}
+
+\noindent \begin{math}
+Answer: (1): 15^\circ , (2): 28^\circ , (3): 85^\circ
+\end{math}\\
+
+\noindent Proof (1): Triangle \emph{ABC} is an isosceles triangle, with sides \emph{AB=AC}, so \(\angle C=(180^\circ-20^\circ)\div2=80^\circ\). Drawing an auxiliary line through point \emph{C}, we can derive that \(\angle x+65^\circ=80^\circ\), giving us \(\mathbf{\angle x = 15^\circ}\).\\
+
+\noindent Proof (2): Extend segment \emph{ED}, creating point \emph{G}, the intersection with line \emph{L}. Since \emph{CD//L}, \(\angle x=EGF\). Also, we know that \(\angle x+\angle EGF=118^\circ\), giving us \(\mathbf{\angle x = 28^\circ}\). \\
+
+\noindent Proof(3): \textit{Refer to diagram below.} Draw an auxiliary line through point \emph{M}, and extend sides \emph{BC} and \emph{IJ}. Make the intersection of the extended sides \emph{BC} and \emph{IJ} with the auxiliary line points \emph{N} and \emph{O}, respectively. We know that an interior angle of a regular hexagon is \(120^\circ\), so each exterior angle of a regular hexagon is \(60^\circ\). \(\angle CNO = 180^\circ-20^\circ-60^\circ=100^\circ\). \(\angle MCN = 60^\circ\). Therefore, \(\angle CMO = 100^\circ-60^\circ=40^\circ\). Opposite angles of a parallelogram are congruent, so \(\angle MOI=75^\circ\) and \(\angle MIO=60^\circ\). Also, \(\angle IMO = 180^\circ-75^\circ-60^\circ=45^\circ\). Therefore, \(\mathbf{\angle x=\angle CMN+\angle IMO=40^\circ+45^\circ=85^\circ}\).
+
+\begin{center}
+    \includegraphics[scale = 0.3]{81/S81(3).png}
+\end{center}
+\end{document}

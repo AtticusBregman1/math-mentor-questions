@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\begin{document}
+\thispagestyle{empty}
+
+\noindent From quadrilateral \emph{ABCD}, sides \emph{BA} and \emph{CD} are extended, with the intersection of those extensions being point \emph{E}. Sides \emph{AD} and \emph{BC} are also extended, with the intersection of those extensions being point \emph{F}. Point \emph{G} marks the intersection of the angle bisectors of \angle \emph{E} and \angle \emph{F}. If \angle \(DAB=70^\circ\), and \angle \(BCD=80^\circ\), find the measure of \angle \emph{EGF}.\footnote{Sugamo High School, Tokyo}\\
+
+\begin{center}
+    \includegraphics[scale = 0.4]{84/84(2).png}
+\end{center}
+
+\newpage
+\thispagestyle{empty}
+
+\begin{center}
+\section*{Solution}
+\end{center}
+
+\noindent \begin{math}
+Answer: 103^\circ
+\end{math}\\
+
+\noindent Proof: Since \emph{EG} and \emph{FG} are bisectors of \(\angle BEC\) and \(\angle AFB\), we can say that \(\angle BEG=\angle GED\) (1), \(\angle BFG=\angle GFD\) (2). Looking at quadrilateral \emph{GEDF}, \(\angle EGF+\angle GED+\angle GFD=\angle EDF\) (3), and looking at quadrilateral \emph{BEGF}, \(\angle B+\angle BEG+\angle BFG=\angle EGF\) (4). Using equalities (1) and (2), and calulcating (3) - (4) as a system of equations, we get \(\angle EGF-\angle B=\angle EDF-\angle EGF\), which simplifies to \(2\angle EGF=\angle B+\angle ADC=360^\circ-(70^\circ+80^\circ)=210^\circ\), giving us \(\mathbf{\angle EGF=105^\circ}\).
+\end{document}

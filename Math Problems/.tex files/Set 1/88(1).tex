@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\begin{document}
+\thispagestyle{empty}
+
+\noindent As shown in the figure below, triangle \emph{ABC} is a right triangle, with \angle \(ABC=90^\circ\). Point \emph{D} lies on segment BC, and point \emph{E} lies on segment \emph{AC}. If  \(\angle BAD=\angle CAD\), and segments \(AD=DE=EC\), find the measure of \angle \emph{ACB}.\footnote{Kunitachi High School, Tokyo}\\
+\noindent \emph{Hint: Use properties of isosceles triangles to find the relationships of segments and angles.}
+
+\begin{center}
+    \includegraphics[scale = 0.4]{88/88(1).png}
+\end{center}
+
+\newpage
+\thispagestyle{empty}
+
+\begin{center}
+\section*{Solution}
+\end{center}
+
+\noindent \begin{math}
+Answer: \angle ACB=18^\circ
+\end{math}\\
+
+\noindent Proof: Since \(EC=DE\), \(\angle EDC=\angle C\). \(\angle AED=\angle EDC+\angle C=2\angle C\). Additionally, since \(AD=DE\), \(\angle EAD=\angle AED=2\angle C\). Given this, we can say that \(\angle BAC=\angle BAD+\angle CAD=2\angle CAD=2\times2\angle C=4\angle C\). Now looking at triangle \emph{ABC}, we know that the sum of interior angles in a triangle sum to \(180^\circ\), so \(\angle C+\angle BAC+\angle B=180^\circ\). Substituting previous equalities and solving for \(\angle C\), we get \(\mathbf{\angle ACB=\angle C=18^\circ}\).
+\end{document}

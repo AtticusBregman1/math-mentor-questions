@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\begin{document}
+\thispagestyle{empty}
+
+\noindent As shown in the figure below, points \emph{A} and \emph{C} lie on segment \emph{OX}, and points \emph{B} and \emph{D} lie on segment \emph{OY}. If segments \(OA=AB=BC=CD\), and \angle \(XOY=a^\circ\), find the measure of \angle \emph{XCD} in terms of \emph{a}.\footnote{Akita Prefecture}\\
+\noindent \emph{Hint: Use properties of isosceles triangles to find the relationships of segments and angles.}
+
+\begin{center}
+    \includegraphics[scale = 0.4]{88/88(2).png}
+\end{center}
+
+\newpage
+\thispagestyle{empty}
+
+\begin{center}
+\section*{Solution}
+\end{center}
+
+\noindent \begin{math}
+Answer: \angle XCD=4a^\circ
+\end{math}\\
+
+\noindent Proof: Since \(OA=AB\), we can say that \(\angle OBA=\angle AOB=a^\circ\). Also, \(\angle BAC=\angle AOB+\angle OBA=a^\circ+a^\circ=2a^\circ\). Similarly, since \(AB=BC\), \(\angle BCA=\angle BAC=2a^\circ\), so \(\angle CBD=\angle BCO+\angle COB=2a^\circ+a^\circ=3a^\circ\). Finally, since \(BC=CD\), \(\angle ODC=\angle CBD=3a^\circ\), so \(\mathbf{\angle XCD=\angle COD+\angle ODC=a^\circ+3a^\circ=4a^\circ}\).
+\end{document}

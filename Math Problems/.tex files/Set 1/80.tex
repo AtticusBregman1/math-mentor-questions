@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\begin{document}
+\thispagestyle{empty}
+
+
+\noindent In the following text, substitute \emph{A, B, C,} and \emph{D} with numbers that make the paragraph true.
+
+\noindent Note: Assume that \emph{n} is an integer that is greater than or equal to 3.\\
+
+\noindent The interior angles of a polygon with \emph{n} sides sum to 
+\begin{math}
+180^\circ \times (n - \textbf{A})
+\end{math}
+degrees, and a regular polygon with \emph{n} sides have interior angles that are each 
+\begin{math}
+\frac{180^\circ \times (n - \textbf{A})}{n}
+\end{math}
+degrees. However, the sum of the exterior angles is always \textbf{B} degrees, regardless of \emph{n}. The number of diagonals that can be drawn from a single vertex is always (\emph{n} - \textbf{C}), and the total number of diagonals in the entire polygon is given by \begin{math}
+\frac{n(n - \textbf{C})}{\textbf{D}}.
+\end{math}
+
+\newpage
+\thispagestyle{empty}
+
+\begin{center}
+\section*{Solution:}
+\end{center}
+
+\noindent \begin{math}
+Answer: A = 2, B = 360, C = 3, D = 2.
+\end{math}\\
+
+\noindent Proof: In a polygon with \emph{n} sides, drawing all the diagonals from a single vertex will create 
+\begin{math}
+    (n - 2) 
+\end{math}
+triangles inside the polygon. Therefore, the sum of all the interior angles is \begin{math}
+180^\circ \times (n - \textbf{2})
+\end{math}
+(\textbf{A}). 
+To compute the angle of each interior angle in a regular polygon, you can simply divide the sum of the interior angles by the number of angles, which is equivalent to the number of sides \emph{n}. The expression used to compute this is:
+\begin{math}
+\frac{180^\circ \times (n - \textbf{2})}{n} (\textbf{A}).
+\end{math}
+The sum of all exterior angles is given by the expression:
+\begin{equation}
+(180^\circ \times n) - (180^\circ \times (n - 2))
+\end{equation}
+which simplifies to:
+\begin{equation}
+180^\circ \times n - 180^\circ \times n + 360^\circ = \textbf{360}(\textbf{B})
+\end{equation}
+When drawing diagonals from a single vertex in a polygon with \emph{n} sides, you connect that single vertex to all other vertices other than itself and its two adjacent vertices. Therefore, the number of diagonals that can be drawn from a single vertex is (\emph{n} - \textbf{3}) (\textbf{C}). The expression used to calculate the total number of diagonals in an \emph{n} sided polygon is
+\begin{math}
+\frac{n(n - 3)}{\textbf{2}} (\textbf{D})
+\end{math}
+. This formula accounts for the fact that each diagonal is counted twice (once from each endpoint), so we divide by 2 to get the correct total.
+
+
+\end{document}

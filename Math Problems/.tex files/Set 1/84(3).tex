@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\begin{document}
+\thispagestyle{empty}
+
+\noindent \emph{ABCD} is a parallelogram. \emph{AE} is an angle bisector of \angle \emph{A}, and \emph{DF} is an angle bisector of \angle \emph{D}. Both \emph{E} and \emph{F} lie on segment \emph{BC}. If \(AB=6.5\)cm and \(AD=10\)cm, find the length of \emph{EF}.\footnote{Nagano Prefecture}
+
+\begin{center}
+    \includegraphics[scale = 0.4]{84/84(3).png}
+\end{center}
+
+\newpage
+\thispagestyle{empty}
+
+\begin{center}
+\section*{Solution}
+\end{center}
+
+\noindent \begin{math}
+Answer: 3cm
+\end{math}\\
+
+\noindent Proof: \(AD//BC\), and opposite angles are congruent so \(\angle DAE=\angle AEB\). \emph{AE} is a bisector of \(\angle BAD\), so \(\angle DAE=\angle EAB\). By transitive property, \(\angle AEB=\angle EAB\), so triangle \emph{BAE} is an isosceles triangle, with \(AB=BE\). Since \(AB=6.5cm\), \emph{BE} is also \(6.5cm\). Similarly, \(\angle ADF=\angle FDC=\angle DFC\), creating an isosceles triangle \emph{CDF}, with \(CD=CF\). Opposite sides of a parallelogram are congruent, so \(AB=CD=CF=6.5cm\). Similarly, \(AD=BC=10cm\). To find the length of \emph{EF}, we must calculate \(\mathbf{EF=BE-CF-BC=6.5+6.5-10=3cm}\).
+\end{document}
